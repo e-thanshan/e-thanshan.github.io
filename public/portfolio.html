@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="font-['Open_Sans']">
+        <div id="nav" class="flex justify-between items-center p-5 fixed top-0 w-full">
+            <a class="text-2xl font-bold font-['Playfair_Display']" href="./index.html">Ethan Shan</a>
+            <div class="flex gap-8 text-lg">
+                <a href="./about.html">About</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./resume.html">Resume</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto my-20">
+            <h1 class="pt-10 pb-4 text-5xl">Projects</h1>
+            <p class="pb-10">A collection of work, developed over the past 2 years.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white shadow-md border border-gray-100 rounded-lg p-8">
+                    <img class="w-full" src="assets/thefuturesphere.png" alt="The Future Sphere">
+                    <h1 class="text-2xl pt-4">"The Future Sphere" homepage</h1>
+                    <p class="text-lg text-gray-600 py-2">Summer 2023</p>
+                    <p>This was a major semi-solo project that I worked on during my internship over the summer at BCTC. My job was to work with a UX/UI designer to remake the homepage of a coding school managed by BCTC. 
+                        This website was built on a React + Typescript + Vite + TailwindCSS stack that called to a backend built with Nodejs and Express, and handled Prisma calls to a PostgreSQL database. 
+                        Much of the work on this site was on the frontend, ensuring that the website was easy to use across all devices.
+                         A big challenge on this site was a course browser component that allowed users to look and sort through featured courses. Writing code to efficiently sort courses by age group, difficulty, start date, and topic proved to be a challenging but highly rewarding experience.</p>
+                </div>
+
+                <div class="bg-white shadow-md border border-gray-100 rounded-lg p-8">
+                    <img class="w-full" src="assets/mango.png" alt="Mango Code">
+                    <h1 class="text-2xl py-4">Mango Code</h1>
+                    <p>This was another project that I worked on during my internship that teaches students how to code, in a similar fashion to how Codecademy does it, but we utilize OpenAI's API services to provide personalized help, regardless of where a student may have trouble on.
+                        This was built on a React + Typescript + Vite + TailwindCSS stack that called to a backend built with Nodejs and Express, and handled Prisma calls to a PostgreSQL database.
+                        I mostly worked on the page as shown on the image, which was the page that students would see when they were working through a lesson. It contains 4 resizable sections; A problem description, a code editor (monaco), a code output, and a help section powered by AI.
+                        Making sure all sections worked fine while being resizable was a challenge, but I learned a lot about how to use CSS to make sure that all sections were responsive and worked well on all devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./portfolio.js"></script>
+</body>
+</html>
